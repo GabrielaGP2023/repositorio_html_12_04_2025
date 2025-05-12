@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Atajos de Emmet</h1>
+    <!-- h1{Atajo de Emmet} -->
+    <h1>Atajo de Emmet</h1>
+    <!-- Clases -->
+     <!-- h2.class -->
+     <h2 class="class"></h2>
+     <!-- div#mensaje -->
+     <div id="mensaje"></div>
+     <!-- input:text -->
+     <input type="text" name="" id="">
+     <h2>Listas</h2>
+     <!-- Nodos hijos se representan con el signo > -->
+      <!-- ul>li -->
+      <ul>
+        <li></li>
+      </ul>
+      <h2>Nodos hermanos</h2>
+      <!-- p+a -->
+      <p></p>
+      <a href=""></a>
+      <h2>Combinando hermanos e hijos</h2>
+      <!-- p+a>img -->
+      <p></p>
+      <a href=""><img src="" alt=""></a>
+      <h2>Repetir etiquetas</h2>
+      <p>Lista ordenada con 5 elementos</p>
+      <!-- ol>li*5 -->
+      <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ol>
+      <p>Lista desordenada con 12 elementos comenzando con mes 1 y terminando
+        con mes 12
+      </p>
+      <!-- ul>li*12{Mes $} -->
+      <ul>
+        <li>Mes 1</li>
+        <li>Mes 2</li>
+        <li>Mes 3</li>
+        <li>Mes 4</li>
+        <li>Mes 5</li>
+        <li>Mes 6</li>
+        <li>Mes 7</li>
+        <li>Mes 8</li>
+        <li>Mes 9</li>
+        <li>Mes 10</li>
+        <li>Mes 11</li>
+        <li>Mes 12</li>
+      </ul>
+      <h2>Agrupaciones</h2>
+      <p>Su signo son los ()</p>
+      <p>Hacer un div y dentro como hermanos una imagen y parrafo y queremos 3</p>
+      <!-- div>(img+p)*3 -->
+      <div>
+        <img src="" alt="">
+        <p></p>
+        <img src="" alt="">
+        <p></p>
+        <img src="" alt="">
+        <p></p>
+      </div>
+      <h2>Nodo superior - ^</h2>
+      <!-- ul>li>div+p^^a -->
+      <ul>
+        <li>
+            <div></div>
+            <p></p>
+        </li>
+      </ul>
+      <a href=""></a>
+      <h2>Numerador - $</h2>
+      <!-- ul>li*10{Capitulo $} -->
+       <ul>
+        <li>Capitulo 1</li>
+        <li>Capitulo 2</li>
+        <li>Capitulo 3</li>
+        <li>Capitulo 4</li>
+        <li>Capitulo 5</li>
+        <li>Capitulo 6</li>
+        <li>Capitulo 7</li>
+        <li>Capitulo 8</li>
+        <li>Capitulo 9</li>
+        <li>Capitulo 10</li>
+       </ul>
+
+       <h2>Atributos - []</h2>
+       <!-- a[target='_blank'] -->
+       <a href="" target="_blank"></a>
+
+       <h2>Ejemplos</h2>
+       <p>Se quiere una tabla de 5 renglones y 3 columnas</p>
+       <!-- table>tr*5>td*3 -->
+       <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+       </table>
+       <p>Queremos un div que dentro tenga:
+        1. una lista ordenada con 5 elementos
+        2. Una imagen
+        3. Parrafo
+       </p>
+    <!-- div>ol>li*5^img+p -->
+       <div>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <img src="" alt="">
+        <p></p>
+       </div>
+
+    <p>Una lista ordenada, para cada elemento se quiere un párrafo y un span</p>
+    <!-- ol>li>p+span -->
+    <ol>
+        <li>
+            <p></p>
+            <span></span>
+        </li>
+    </ol>
+    <p>Una lista desordenada, para cada elemento se desea 
+        un parrafo con clase rojo e id pregunta </p>
+        <!-- ul>li>p.rojo#pregunta -->
+
+        <ul>
+            <li>
+                <p class="rojo" id="pregunta"></p>
+            </li>
+        </ul>
+
+    <p>Lista ordenada, con 5 elementos, cada elemento tiene dos parrafos el primer
+        parrafo tiene una clase que se llame pregunta y el siguiente respuesta
+    </p>
+    <!-- ol>li*5>p.pregunta+p.respuesta -->
+    <ol>
+        <li>
+            <p class="pregunta"></p>
+            <p class="respuesta"></p>
+        </li>
+        <li>
+            <p class="pregunta"></p>
+            <p class="respuesta"></p>
+        </li>
+        <li>
+            <p class="pregunta"></p>
+            <p class="respuesta"></p>
+        </li>
+        <li>
+            <p class="pregunta"></p>
+            <p class="respuesta"></p>
+        </li>
+        <li>
+            <p class="pregunta"></p>
+            <p class="respuesta"></p>
+        </li>
+    </ol>
+    <p>Crear una tabla de 3 renglones y 2 columnas en la primera columna 
+        se quiere mostrar una imagen y en la segunda columna un párrafo y
+        una columna
+    </p>
+    <!--table>tr*3>td>img^td>p+a -->
+   
+    <table>
+        <tr>
+            <td><img src="" alt=""></td>
+            <td>
+                <p></p>
+                <a href=""></a>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="" alt=""></td>
+            <td>
+                <p></p>
+                <a href=""></a>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="" alt=""></td>
+            <td>
+                <p></p>
+                <a href=""></a>
+            </td>
+        </tr>
+    </table>
+
+    <p>Hacer un select con 5 opciones que tenga ciudad 1... hasta la 5</p>
+    <!-- select>option[value=$]{Ciudad $}*5 -->
+    <select name="" id="">
+        <option value="1">Ciudad 1</option>
+        <option value="2">Ciudad 2</option>
+        <option value="3">Ciudad 3</option>
+        <option value="4">Ciudad 4</option>
+        <option value="5">Ciudad 5</option>
+    </select>
+
+    <p>Lista ordenada y cada elemento que tenga el contenido de la etiquetas
+        Planeta 1 ... hasta el 8
+    </p>
+    <!-- ol>li{Planeta $}*8 -->
+    <ol>
+        <li>Planeta 1</li>
+        <li>Planeta 2</li>
+        <li>Planeta 3</li>
+        <li>Planeta 4</li>
+        <li>Planeta 5</li>
+        <li>Planeta 6</li>
+        <li>Planeta 7</li>
+        <li>Planeta 8</li>
+    </ol>
+
+
+     
+</body>
+</html>
